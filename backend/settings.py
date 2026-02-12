@@ -70,7 +70,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.getenv("POSTGRES_DB", "otp_task"),
         "USER": os.getenv("POSTGRES_USER", "postgres"),
-        "PASSWORD": "", 
+        "PASSWORD": "kesavroman0257", 
         "HOST": os.getenv("POSTGRES_HOST", "127.0.0.1"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
     }
