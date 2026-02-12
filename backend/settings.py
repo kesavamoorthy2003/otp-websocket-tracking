@@ -70,7 +70,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.getenv("POSTGRES_DB", "otp_task"),
         "USER": os.getenv("POSTGRES_USER", "postgres"),
-        "PASSWORD": "kesavroman0257", # Ungaloda working password
+        "PASSWORD": "", 
         "HOST": os.getenv("POSTGRES_HOST", "127.0.0.1"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
     }
@@ -88,7 +88,7 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60), # 60 mins expiry for easier testing
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60), 
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
     "ROTATE_REFRESH_TOKENS": False,
     "ALGORITHM": "HS256",
